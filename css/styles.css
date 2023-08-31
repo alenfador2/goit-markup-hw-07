@@ -1056,7 +1056,7 @@ img {
   gap: 16px;
 }
 .footer-input {
-  max-width: 398px;
+  width: 398px;
   height: 40px;
   flex-shrink: 0;
   background: var(--navyblue, #2e2f42);
@@ -1122,7 +1122,7 @@ img {
     column-gap: 24px;
   }
   .footer-input {
-    max-width: 264px;
+    width: 264px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1144,6 +1144,9 @@ img {
   }
   .newsletter {
     margin-right: 159px;
+  }
+  .footer-input {
+    width: 264px;
   }
 }
 /* FOOTER CONTAINER END */
