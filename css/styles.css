@@ -532,7 +532,6 @@ img {
     url('../images/group-work.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
   height: 432px;
   max-width: 768px;
   margin-inline: auto;
@@ -577,11 +576,14 @@ img {
   min-width: 169px;
   height: 56px;
 }
-@media screen and (min-device-pixel-ratio: 2),
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .first-section {
-    background-image: url('../images/group_work_2x.jpg');
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/dewelopers_workspace_2x.jpg);
+    background-size: cover;
   }
 }
 /* TABLET */
@@ -610,13 +612,6 @@ img {
     line-height: 1.07;
     letter-spacing: 1.12px;
   }
-  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .first-section {
-      background-image: url('../images/tablet_workspase_2x.jpg');
-    }
-  }
 }
 /* DESCTOP */
 @media screen and (min-width: 1200px) {
@@ -643,13 +638,6 @@ img {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .first-section {
-    background-image: url('../images/dewelopers_workspase_2x.jpg');
   }
 }
 
@@ -1131,6 +1119,7 @@ img {
   .down {
     padding-top: 96px;
     padding-bottom: 96px;
+    padding-inline: auto;
     max-width: 1200px;
   }
   .footer-container {
@@ -1144,6 +1133,9 @@ img {
   .footer-div {
     align-items: start;
   }
+  .footer-div {
+    margin-right: 164px;
+  }
   .credo {
     text-align: left;
   }
@@ -1155,14 +1147,14 @@ img {
     column-gap: 24px;
   }
   .footer-input {
-    width: 264px;
+    max-width: 264px;
   }
 }
 @media screen and (min-width: 1200px) {
   .down {
     padding-top: 100px;
     padding-bottom: 132px;
-    max-width: 1440px;
+    width: 1440px;
   }
   .footer-container {
     flex-wrap: nowrap;
