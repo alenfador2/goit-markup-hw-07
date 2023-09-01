@@ -521,7 +521,7 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url('../images/group-work.jpg');
-  background-size: cover;
+  background-size: 428px 432px;
   background-repeat: no-repeat;
   width: 100%;
   height: 432px;
@@ -568,6 +568,13 @@ img {
   min-width: 169px;
   height: 56px;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .first-section {
+    background-image: url('../images/group_work_2x.jpg');
+  }
+}
 /* TABLET */
 @media screen and (min-width: 768px) {
   .first-section {
@@ -576,6 +583,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url('../images/tablet_workspase.jpg');
+    background-size: 768px 436px;
     height: 436px;
     max-width: 768px;
   }
@@ -593,6 +601,13 @@ img {
     line-height: 1.07;
     letter-spacing: 1.12px;
   }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .first-section {
+      background-image: url('../images/tablet_workspase_2x.jpg');
+    }
+  }
 }
 /* DESCTOP */
 @media screen and (min-width: 1200px) {
@@ -602,6 +617,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url('../images/dewelopers_workspace.jpg');
+    background-size: 1440px 600px;
     height: 600px;
     max-width: 1440px;
   }
@@ -618,6 +634,13 @@ img {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .first-section {
+    background-image: url('../images/dewelopers_workspase_2x.jpg');
   }
 }
 
