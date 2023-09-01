@@ -1020,7 +1020,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  max-width: 268px;
+  width: 268px;
 }
 .social {
   color: var(--white, #fff);
@@ -1154,7 +1154,7 @@ img {
   .down {
     padding-top: 100px;
     padding-bottom: 132px;
-    width: 1440px;
+    max-width: 1440px;
   }
   .footer-container {
     flex-wrap: nowrap;
