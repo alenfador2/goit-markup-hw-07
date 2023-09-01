@@ -24,26 +24,95 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="top-header">
-      <div class="container header-container">
+    <header class="mobile-top-header container">
+      <!-- mobile menu start -->
+      <div class="mobile-header-container">
         <nav class="part-navlinks">
-          <a class="logo" href="./index.html"
+          <a class="mobile-logo" href="./index.html"
             >WEB<span class="logo-part">STUDIO</span></a
           >
-          <ul class="nav-menu">
-            <li class="navlinks-items-list">
-              <a class="navlinks" href="./index.html">Studio</a>
-            </li>
-            <li class="navlinks-items-list">
-              <a class="navlinks portfolio-class" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class="navlinks-items-list">
-              <a class="navlinks" href="#">Contacts</a>
-            </li>
-          </ul>
+          <button class="open-mobile-menu js-open-menu" type="button">
+            <svg class="mobile-svg" width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
         </nav>
+        <div class="mobile-menu js-menu-container">
+          <div class="mobile-container-body">
+            <button class="close-mobile-menu js-close-menu" type="button">
+              <svg class="close-mobile-svg" width="12" height="12">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </button>
+            <ul class="mobile-nav-menu">
+              <li class="mobile-navlinks-item">
+                <a class="mobile-navlinks" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-navlinks-item">
+                <a class="mobile-navlinks" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mobile-navlinks-item">
+                <a class="mobile-navlinks" href="#">Contacts</a>
+              </li>
+            </ul>
+
+            <address class="mobile-contact-links">
+              <ul class="contacts-list">
+                <li>
+                  <a class="phone-contacts" href="tel:+11(000)111-11-11"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a class="mail-contacts" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="mobile-svg-div">
+              <a href="#" class="sm-links">
+                <svg class="team-description" width="16" height="16">
+                  <use href="./images/icons.svg#icon-Instagram"></use></svg
+              ></a>
+              <a href="#" class="sm-links">
+                <svg class="team-description" width="16" height="16">
+                  <use href="./images/icons.svg#icon-Twitter"></use></svg
+              ></a>
+              <a href="#" class="sm-links">
+                <svg class="team-description" width="16" height="16">
+                  <use href="./images/icons.svg#icon-Facebook"></use></svg
+              ></a>
+              <a href="#" class="sm-links">
+                <svg class="team-description" width="16" height="16">
+                  <use href="./images/icons.svg#icon-Linkedin"></use></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu end -->
+      <div class="container index-header-container">
+        <div class="not-mobile">
+          <nav class="part-navlinks">
+            <a class="logo" href="./index.html"
+              >WEB<span class="logo-part">STUDIO</span></a
+            >
+          </nav>
+          <nav>
+            <ul class="nav-menu">
+              <li class="navlinks-items-list">
+                <a class="navlinks studio-class" href="./index.html">Studio</a>
+              </li>
+              <li class="navlinks-items-list">
+                <a class="navlinks" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="navlinks-items-list">
+                <a class="navlinks" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <address class="part-contact-links">
           <ul class="contacts-list">
             <li>
